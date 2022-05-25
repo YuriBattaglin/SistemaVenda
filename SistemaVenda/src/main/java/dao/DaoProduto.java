@@ -6,15 +6,19 @@ import diminio.Produto;
 public class DaoProduto {
 
 	public void salvar(Produto produto) {
-		System.out.println("Salvando produto");
+		
+		DaoProduto daoProduto = new DaoProduto();
+		daoProduto.salvar(produto);
 	}
 	
 	public void excluir(Integer id) {
-		System.out.println("Excluindo produto");
+		DaoProduto daoProduto = new DaoProduto();
+		daoProduto.excluir(id);
 	}
 	
 	public List<Produto> listar(String nome) {
-		System.out.println("Listando produtos");
-		return null;
+		DaoProduto daoProduto = new DaoProduto();
+		return daoProduto.listar(nome);
+
 	}
 }
